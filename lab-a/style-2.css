@@ -1,3 +1,68 @@
 body {
-  background-color: #ecfbe6;
+  background: linear-gradient(135deg, #f5e6d3 0%, #ffe6b3 100%);
 }
+
+h1 {
+  color: #b85c1a;
+  font-size: 42px;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  text-align: center;
+  background-color: #ffe6b3;
+  padding: 15px;
+}
+
+h2 {
+  color: #9b4b1a;
+  font-size: 30px;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  background-color: #fff0d4;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+h3 {
+  color: #c46b2e;
+  font-size: 26px;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #4a2a1a;
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+ul {
+  color: #4a2a1a;
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  background-color: #fffaf0;
+  padding: 15px 15px 15px 40px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #b85c1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+section {
+  border: 3px dashed #b85c1a;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 245, 235, 0.7);
+}
+
