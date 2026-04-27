@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #e8f0f5;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+#map-container {
+  width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+  border: 3px solid #2c3e50;
+  border-radius: 10px;
+}
+
+#map-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#puzzle-area, #board-area {
+  width: 700px;
+  margin: 20px auto;
+}
+
+#puzzle-pieces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  min-height: 230px;
+  border: 3px solid #3498db;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 6px;
+  margin-top: 10px;
+  min-height: 230px;
+  border: 3px solid #3498db;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #555;
+  cursor: grab;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+.puzzle-piece:active {
+  cursor: grabbing;
+}
+
+#board .puzzle-piece {
+  cursor: pointer;
+}
+
+
+/* nie używac html canvas*/
