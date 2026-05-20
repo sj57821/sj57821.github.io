@@ -1,8 +1,6 @@
 <?php
-namespace App\Service;
 
-use App\Exception\ConfigException;
-use App\Exception\FrameworkException;
+namespace App\Service;
 
 class Templating
 {

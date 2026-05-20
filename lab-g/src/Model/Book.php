@@ -4,7 +4,7 @@ namespace App\Model;
 
 use App\Service\Config;
 
-class Post
+class Book
 {
     private ?int $id = null;
     private ?string $title = null;
