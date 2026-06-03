@@ -1,3 +1,48 @@
 body {
-    background-color: skyblue;
+    background-color: #d6d6c2;
+}
+
+.navbar {
+    background-color: #2d5f3e !important;
+}
+
+footer {
+    background-color: #2d5f3e !important;
+}
+
+h1 {
+    color: #9b2c1d;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #4a6b2f;
+    border: 2px solid #2d3e1f;
+}
+
+.btn-info {
+    background-color: #3a6b8c;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #b86f1c;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #a12a2a;
+    border: none;
+}
+
+
+.navbar-brand {
+    color: #ffd966 !important;
+    font-weight: bold;
+}
+
+
+footer .container {
+    color: #ffd966;
 }
