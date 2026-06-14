@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Book Details{% endblock %}
+
+{% block body %}
+<h1>Book Details</h1>
+
+<p><strong>Title:</strong> {{ book.title }}</p>
+<p><strong>Author:</strong> {{ book.author }}</p>
+<p><strong>Year:</strong> {{ book.year }}</p>
+<p><strong>Created at:</strong> {{ book.created_at }}</p>
+
+<a href="{{ url_for('edit', id=book.id) }}">Edit</a>
+<a href="{{ url_for('index') }}">Back to list</a>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}Books List{% endblock %}
+
+{% block body %}
+<h1>Books List</h1>
+<a href="{{ url_for('new') }}">Create new</a>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.year }}</td>
+            <td>
+                <a href="{{ url_for('show', id=book.id) }}">show</a>
+                <a href="{{ url_for('edit', id=book.id) }}">edit</a>
+                <form action="{{ url_for('delete', id=book.id) }}" method="POST" style="display:inline">
+                    <button type="submit" onclick="return confirm('Are you sure?')">delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/">Back to home</a>
+{% endblock %}
