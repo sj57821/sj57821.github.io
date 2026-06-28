@@ -19,11 +19,11 @@ class CsvEncoder implements EncoderInterface
     public function decode(string $data): array
     {
         $lines = explode("\n", trim($data));
-        $headers = str_getcsv($lines[0], $this->delimiter);
+        $headers = str_getcsv($lines[0], $this->delimiter, '"', '\\');
         $result = [];
 
         for ($i = 1; $i < count($lines); $i++) {
-            $row = str_getcsv($lines[$i], $this->delimiter);
+            $row = str_getcsv($lines[$i], $this->delimiter, '"', '\\');
             if (count($row) === count($headers)) {
                 $result[] = array_combine($headers, $row);
             }
