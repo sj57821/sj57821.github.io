@@ -1,25 +1,25 @@
 {% extends "layout.html" %}
 
-{% block title %}Edit Book{% endblock %}
+{% block title %}Edit Post{% endblock %}
 
 {% block body %}
-<h1>Edit: {{ book.title }}</h1>
+    <h1>Edit: {{ book.title }}</h1>
 
-<form method="POST">
-    <div>
-        <label>Title:</label>
-        <input type="text" name="title" value="{{ book.title }}" required>
-    </div>
-    <div>
-        <label>Author:</label>
-        <input type="text" name="author" value="{{ book.author }}" required>
-    </div>
-    <div>
-        <label>Year:</label>
-        <input type="number" name="year" value="{{ book.year }}" required>
-    </div>
-    <button type="submit">Save</button>
-</form>
+    <form method="POST">
+        <div>
+            <label>Title:</label>
+            <input type="text" name="title" value="{{ book.title }}" required>
+        </div>
+        <div>
+            <label>Author:</label>
+            <input type="text" name="author" value="{{ book.author }}" required>
+        </div>
+        <div>
+            <label>Year:</label>
+            <input type="number" name="year" value="{{ book.year }}" required>
+        </div>
+        <button type="submit">Save</button>
+    </form>
 
-<a href="{{ url_for('index') }}">Cancel</a>
+    <a href="/books">Cancel</a>
 {% endblock %}
